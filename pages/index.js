@@ -1,7 +1,8 @@
 import Head from 'next/head'
+import Home from '../components/Home'
 import Header from '../components/Header'
 
-export default function Home() {
+export default function Index() {
   return (
     <div>
       <Head>
@@ -12,6 +13,9 @@ export default function Home() {
       <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
           {/* Header */} 
           <Header />
+
+          {/* About */}
+          <Home />
         </div>
     </div>
   )

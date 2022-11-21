@@ -1,13 +1,8 @@
-import React, { useState } from 'react'
-import { SocialIcon } from 'react-social-icons';
+import React from 'react'
 import {motion} from "framer-motion"
 import SettingsIcon from '@mui/icons-material/Settings';
 
 function Header() {
-  const [colorYt, setColorYt] = useState('gray')
-    const [colorFb, setColorFb] = useState('gray')
-    const [colorIg, setColorIg] = useState('gray')
-    const [colorTw, setColorTw] = useState('gray')
   return (
     <header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 p-5 xl:items-center'>
         <motion.div className='flex flex-row items-center'
@@ -43,7 +38,8 @@ function Header() {
             duration: 1.6,
         }}
         className='hidden md:flex items-center cursor-pointer justify-between text-gray-300'>
-            <button className='heroButton'>About</button>
+            
+                <button className='heroButton'>Home</button>
             <button className='heroButton'>Create</button>
             <button className='heroButton'>Categories</button>
             <button className='heroButton'>Customization</button>

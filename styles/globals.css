@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+      'Arial', sans-serif;
+    margin: 0 auto;
+  }
+
 @layer components {
     .heroButton {
         @apply px-6 py-1 border border-[#242424] rounded-full uppercase text-xs tracking-widest duration-500 transition-all text-gray-500 lg:hover:border-[#F7AB0A]/40 lg:hover:text-[#F7AB0A]/40

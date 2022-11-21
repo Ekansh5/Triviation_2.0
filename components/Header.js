@@ -4,7 +4,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 
 function Header() {
   return (
-    <header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 p-5 xl:items-center'>
+    <header className='sticky top-0 flex items-start justify-between w-screen md:max-w-7xl mx-auto z-20 p-5 xl:items-center'>
         <motion.div className='flex flex-row items-center'
         initial={{
             x: -500,
@@ -20,7 +20,7 @@ function Header() {
             duration: 1.2,
         }}
         >
-        <h3 className='uppercase tracking-[5px] md:tracking[15px] text-gray-500 text-xl'>Triviation</h3>
+        <h3 className='uppercase tracking-[5px] md:tracking[20px] text-gray-500 text-xl'>Triviation</h3>
             
         </motion.div>
         <motion.div

@@ -10,6 +10,12 @@ body {
 
 @layer components {
     .heroButton {
-        @apply px-6 py-1 border border-[#242424] rounded-full uppercase text-xs tracking-widest duration-500 transition-all text-gray-500 lg:hover:border-[#F7AB0A]/40 lg:hover:text-[#F7AB0A]/40
+        @apply px-6 mx-2 py-1 border border-[rgb(33,33,33)] rounded-full uppercase text-xs tracking-widest duration-500 transition-all text-gray-500 lg:hover:border-[#F7AB0A]/40 lg:hover:text-[#F7AB0A]/40
     }
+}
+
+@layer components {
+  .box {
+      @apply bg-[rgb(30,30,30)] text-black px-5 py-5 rounded-xl text-white font-sans
+  }
 }

@@ -4,7 +4,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 
 function Header() {
   return (
-    <header className='sticky top-0 flex items-start justify-between w-screen md:max-w-7xl mx-auto z-20 p-5 xl:items-center'>
+    <header className='sticky top-0 flex items-start justify-between mx-auto z-20 px-14 p-5 xl:items-center bg-[rgb(33,33,33)]'>
         <motion.div className='flex flex-row items-center'
         initial={{
             x: -500,
@@ -39,9 +39,9 @@ function Header() {
         }}
         className='hidden md:flex items-center cursor-pointer justify-between text-gray-300'>
             
-                <button className='heroButton'>Home</button>
-            <button className='heroButton'>Create</button>
-            <button className='heroButton'>Categories</button>
+            <a href="#home"><button className='heroButton'>Home</button></a>
+            <a href="#create"><button className='heroButton'>Create</button></a>
+            <a href="#categories"><button className='heroButton'>Categories</button></a>
             <button className='heroButton'>Customization</button>
         </motion.div>
         <motion.div

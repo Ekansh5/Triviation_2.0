@@ -1,5 +1,6 @@
 import React from 'react'
 import MoneyOffCsredIcon from '@mui/icons-material/MoneyOffCsred';
+import {motion} from 'framer-motion'
 import Pic from '../images/Home.png'
 import Image from 'next/image';
 
@@ -19,7 +20,7 @@ function Home() {
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#F7AB0A]/70 to-[#F7AB0A]/30'>This Is The Perfect Location For </span>
             <span> Geeks Up For Quizzes</span> </div>
     </div>  
-    <div     
+    <motion.div     
      initial={{
         x: 500,
         opacity: 0,
@@ -38,7 +39,7 @@ function Home() {
         alt='Home'
         className='object-scale-down my-5 md:mx-10 mx'
         />
-    </div>
+    </motion.div>
     </section>
 )
 }

@@ -1,15 +1,25 @@
 import React from 'react'
+import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 
 function Create() {
+  const [text, count] = useTypewriter({
+    words: [
+      "Create your own quiz to challenge others. This can be as simple or as complex as you like!",
+      "Personalize your quizzes as you like them.",
+      "We have 3 different layouts, each layout having a unique feature. Try it today!",
+    ],
+    delaySpeed: 1000
+})
   return (
-    <div id="create" className='md:max-w-7xl mx-auto z-20 p-5 xl:items-center scroll-smooth'>
-       <div className='flex flex-col mt-5 space-y-5 text-[15px] md:text-[25px] font-bold font-sans'>
-       <h1 className='text-[25px] md:text-[30px] font-bold font-sans'>Create Your Own Quiz</h1>
-          <div className='flex text-[20px]'>
-            <h1>Create your own quiz&nbsp;
-            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#F7AB0A]/70 to-[#F7AB0A]/40'>and share it with anyone in the world</span>
-            </h1>
+    <section id="create" className='md:max-w-7xl mx-auto z-20 p-5 xl:items-center'>
+       <div className='flex flex-col mt-5 space-y-5 text-[15px] md:text-[25px]'>
+       <center>
+       <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl'>Create</h3>
+       </center>
+            <div className='flex text-xl font-mono'>
+            <p>{text}</p>
+            <Cursor cursorColor='#F7AB0A' />
             </div>
           </div>
         <div className='flex md:flex-row flex-col md:space-y-0 space-y-5 md:space-x-5 my-7'>
@@ -30,7 +40,7 @@ function Create() {
             <p>Easily create your quiz with our easy GUI</p>
           </div>
         </div>
-    </div>  
+    </section>  
   )
 }
 

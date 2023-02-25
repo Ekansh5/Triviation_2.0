@@ -3,7 +3,7 @@ import React from 'react'
 
 function Categories() {
   return (
-    <div id="categories" className='md:max-w-7xl mx-auto z-20 p-5 xl:items-center scroll-smooth'>
+    <section id="categories" className='md:max-w-7xl mx-auto z-20 p-5 xl:items-center '>
        <div className='flex flex-col mt-5 space-y-5 text-[15px] md:text-[25px] font-bold font-sans'>
        <h1 className='text-[25px] md:text-[30px] font-bold font-sans'>Customizable Quizzes</h1>
           <div className='flex text-[20px]'>
@@ -20,7 +20,7 @@ function Categories() {
             <div className='box'>Hello</div>
         </div>
         </div>
-    </div>  
+    </section>  
   )
 }
 

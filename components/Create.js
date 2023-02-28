@@ -12,12 +12,10 @@ function Create() {
     delaySpeed: 1000
 })
   return (
-    <section id="create" className='md:max-w-7xl mx-auto z-20 p-5 xl:items-center'>
+    <section id="create" className='md:max-w-7xl mx-auto z-20 p-5 xl:items-center overflow-hidden'>
        <div className='flex flex-col mt-5 space-y-5 text-[15px] md:text-[25px]'>
-       <center>
-       <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl'>Create</h3>
-       </center>
-            <div className='flex text-xl font-mono'>
+       <h3 className='font-bold uppercase tracking-[20px] text-gray-500 text-2xl'>Create</h3>
+            <div className='flex text-lg md:text-xl font-mono '>
             <p>{text}</p>
             <Cursor cursorColor='#F7AB0A' />
             </div>

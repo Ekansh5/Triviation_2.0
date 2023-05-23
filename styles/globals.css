@@ -16,6 +16,12 @@ body {
 
 @layer components {
   .box {
-      @apply bg-[rgb(30,30,30)] text-black px-5 py-5 rounded-xl text-white font-sans
+      @apply bg-[rgb(30,30,30)] text-black px-5 py-5 rounded-xl text-white font-sans cursor-pointer lg:hover:opacity-80 
   }
+}
+
+@layer components {
+  .page {
+  @apply bg-[rgb(36,36,36)] text-white snap-y snap-mandatory z-0 overflow-hidden
+}
 }

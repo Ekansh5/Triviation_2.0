@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import Settings from './Settings';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from '@mui/material';
 
 function Header() {
     const [open, setOpen] = useState(false)
@@ -50,7 +51,7 @@ function Header() {
                 }}
                 className='hidden md:flex items-center cursor-pointer justify-between text-gray-300'>
 
-                <a href="/"><button className='heroButton'>Home</button></a>
+                <Link href="/"><button className='heroButton'>Home</button></Link>
                 <a href=""><button className='heroButton'>Create</button></a>
                 <a href=""><button className='heroButton'>Categories</button></a>
                 <button className='heroButton'>Customize</button>

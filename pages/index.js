@@ -19,6 +19,7 @@ export default function Index() {
           <Header />
           </header>
 
+
           {/* Home */}
           <section id='home' className='mt-12 snap-start'>
       <Home />
@@ -30,14 +31,14 @@ export default function Index() {
       </section>
 
           {/* Categories */}
-          <section id='customize' className='snap-start'>
+          <section id='categories' className='snap-start'>
       <Categories />
       </section>
 
           {/* Custom */}
         <div className="fixed right-5 bottom-5 text-right cursor-pointer rounded-full m-0">
-          <button className='hover:opacity-70 animation-all duration-300'>
-          <div className="h-12 w-12 flex items-center justify-center bg-[#F7AB0A]/80 rounded-full hover:bg-opacity-30"><BrushIcon /></div>
+          <button className='hover:opacity-70 animation-all duration-300 h-12 w-12 flex items-center justify-center bg-[#F7AB0A]/80 rounded-full hover:bg-opacity-30'>
+          <BrushIcon />
           </button>
         </div>
   

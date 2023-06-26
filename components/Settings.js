@@ -10,15 +10,15 @@ export default function Example() {
     <div className="fixed text-right foxus:outline-none">
       <Menu as="div" className="relative inline-block text-left">
         <div className='flex items-center'>
-          <Menu.Button className="flex items-center">
-          <motion.button
-                    whileHover={{ rotate: 50 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
-
-                >
-                    <SettingsIcon className='cursor-pointer lg:hover:text-white mx-2 text-gray-400 transition-all duration-750' />
-                </motion.button>
-                <p className="mx-1 hidden md:flex uppercase text-sm tracking-widest duration-500 transition-all text-gray-500">Settings</p>
+          <Menu.Button className="flex items-center"
+              whileHover={{ rotate: 50 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+              <motion.div
+                  whileHover={{ rotate: 50 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              ><SettingsIcon className='cursor-pointer lg:hover:text-white mx-2 text-gray-400 transition-all duration-750' /></motion.div>
+              <p className="mx-1 hidden md:flex uppercase text-sm tracking-widest duration-500 transition-all text-gray-500">Settings</p>
           </Menu.Button>
         </div>
         <Transition
@@ -58,30 +58,6 @@ export default function Example() {
                </Menu.Item>
              
             </div>
-            {/* <div className="px-1 py-1">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    {active ? (
-                      <DeleteActiveIcon
-                        className="mr-2 h-5 w-5 text-violet-400"
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <DeleteInactiveIcon
-                        className="mr-2 h-5 w-5 text-violet-400"
-                        aria-hidden="true"
-                      />
-                    )}
-                    Delete
-                  </button>
-                )}
-              </Menu.Item>
-            </div> */}
           </Menu.Items>
         </Transition>
       </Menu>

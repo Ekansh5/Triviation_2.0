@@ -9,7 +9,7 @@ function Categories() {
          <h1>Pick your choice from our huge library of questions&nbsp;
             <br />
             <br />
-        <h1>Change them</h1>
+        Change them
          <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#F7AB0A]/70 to-[#F7AB0A]/40'>based on your own interest</span>
          </h1>
          </div>
